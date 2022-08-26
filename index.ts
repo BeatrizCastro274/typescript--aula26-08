@@ -13,7 +13,7 @@ let otherList: Array<number> = [1, 2, 3];
 const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `
 <h1> Array declaration</h1>
-<h2> list:${list} </h2>
+<h2> list: ${list} </h2>
 <h2>Other list: ${otherList} </h2>
 `;
 let me: [string, number];
@@ -23,7 +23,36 @@ const appDivTuple: HTMLElement = document.getElementById('app-tuple');
 appDivTuple.innerHTML = `
 <h1>Tuple</h1>
 <h2> Me chamo ${me[0]} e tenho ${me[1]} anos. </h2>
+`;
 
+enum Color {
+  Red,
+  Green,
+  Blue,
+}
+let color1: Color = Color.Green;
+
+enum ColorwithRef {
+  Red = 10,
+  Green = 20,
+  Blue = 30,
+}
+let color2: ColorwithRef = ColorwithRef.Blue;
+const appDivEnum: HTMLElement = document.getElementById('app-Enum');
+appDivEnum.innerHTML = `
+<h1>Enumerated types</h1>
+<h2>Cor 1: ${color1}</h2>
+<h2>Cor 2: ${color2}</h2>
+`;
+
+let notSure: any = 4;
+notSure = "Maybe I'm a string";
+notSure = false; //okay, definitely a boolean
+
+const appDivAny: HTMLElement = document.getElementById('app-Any');
+appDivEnum.innerHTML = `
+<h1>Any variable</h1>
+<h2>${notSure}</h2>
 `;
 
 // Aula 19/08
