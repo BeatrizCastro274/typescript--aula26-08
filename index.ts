@@ -16,6 +16,15 @@ appDiv.innerHTML = `
 <h2> list:${list} </h2>
 <h2>Other list: ${otherList} </h2>
 `;
+let me: [string, number];
+me = ['Beatriz', 21];
+
+const appDivTuple: HTMLElement = document.getElementById('app-tuple');
+appDivTuple.innerHTML = `
+<h1>Tuple</h1>
+<h2> Me chamo ${me[0]} e tenho ${me[1]} anos. </h2>
+
+`;
 
 // Aula 19/08
 //let intervalId = setInterval(() => {
