@@ -1,14 +1,14 @@
-//declare function create(o: object | null): void;
-//create({ prop: 0 }); //OK
+declare function create(o: object | null): void;
+create({ prop: 0 }); //OK
 //create(null); //ok
 //create(42); //erro
 //create('String'); //erro
 //create(false); //erro
 //create(undefined); // OK
-//const appDivObject: HTMLElement = document.getElementById('app-Obj');
-//appDivObject.innerHTML = `
-//<h1>Object</h1>
-//`;
+const appDivObject: HTMLElement = document.getElementById('app-Obj');
+appDivObject.innerHTML = `
+<h1>Object</h1>
+`;
 
 // Aula 19/08
 //let intervalId = setInterval(() => {
