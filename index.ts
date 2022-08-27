@@ -90,11 +90,6 @@ function alertMethod(this: HTMLElement, ev: Event) {
   alert('Alertando com Typescript');
 }
 
-// Write TypeScript code!
-
-const appH1: HTMLElement = document.getElementById('app.h1');
-appH1.innerHTML = title;
-
 function sum(n1: number, n2: number): number {
   return n1 + n2;
 }

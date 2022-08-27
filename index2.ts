@@ -47,3 +47,15 @@
 //    console.log(i);
 //  }
 //}
+
+// Greeter
+
+import { Greeter } from './greeter.ts';
+let greeter = new Greeter('Impiedoso');
+
+// Write TypeScript code!
+
+const appH1: HTMLElement = document.getElementById('app.h1');
+appH1.innerHTML = title;
+const appP: HTMLElement = document.getElementById('app.P');
+appP.innerHTML = greeter.getGreeting();
